@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	//alert at the start of the game
 	function startGame() {
-		alert("You're on the Goatman's Bridge in Maryland. Like so many, you've been caught in the Goatman's cruel game: guess his secret word in nine tries, or face his wrath!")
+		alert("You're on the Goatman's Bridge near Argyle, Texas. Like so many, you've been caught in the Goatman's cruel game: guess his secret word in nine tries, or face his wrath!")
 		$('#guess').focus()
 	}
 
