@@ -1,8 +1,25 @@
 $(document).ready(function(){
+	//sound object for when they get an answer wrong
+	function wrongSound(src) {
+		this.sound = document.createElement('audio')
+		this.sound.src = src
+		this.sound.setAttribute('preload', 'auto')
+		this.sound.setAttribute('controls', 'none')
+		this.sound.style.display = 'none'
+		document.body.appendChild(this.sound)
+		this.play = function() {
+			this.sound.play()
+		}
+		this.stop = function() {
+			this.sound.pause()
+		}
+	}
+
 	//alert at the start of the game
 	function startGame() {
 		alert("You're on the Goatman's Bridge near Argyle, Texas. Like so many, you've been caught in the Goatman's cruel game: guess his secret word in nine tries, or face his wrath!")
 		$('#guess').focus()
+		wrongNoise = new wrongSound('Goat-noise.mp3')
 	}
 
 	//creating the secret word
@@ -113,6 +130,7 @@ $(document).ready(function(){
 					//then clear the value of #guess and return focus to it
 					document.querySelector('#guess').value = ''
 					$('#guess').focus()
+					wrongNoise.play()
 					didTheyLose(tries)
 					goatmanMoves()
 				} else {
