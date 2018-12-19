@@ -1,0 +1,28 @@
+html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+
+body {
+	font-family: monospace;
+}
+
+#wordblank {
+	font-size: 25px;
+	letter-spacing: 2px;
+}
+
+#wrongletters {
+	font-size: 20px;
+}
+
+#turnsleft {
+	font-size: 20px;
+}
+
+#guessLabel {
+	font-size: 15px;
+	font-family: sans-serif;
+}
+
+button {
+	width: 100px;
+}

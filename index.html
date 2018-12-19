@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>A Hanged Man</title>
+	<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+	<div id="container">
+		<p id="wordblank"></p>
+		<p id="wrongletters">Dead Letters: </p>
+		<p id="turnsleft"></p>
+		<form>
+			<label for="guess" id="guesslabel">Guess:</label>
+			<input type="text" name="guess" id="guess">
+			<button type="submit">Guess Letter</button>
+		</form>
+	</div>
+
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="common-words.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
