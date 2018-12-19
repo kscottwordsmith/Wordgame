@@ -7,14 +7,17 @@
 </head>
 <body>
 	<div id="container">
-		<p id="wordblank"></p>
-		<p id="wrongletters">Dead Letters: </p>
-		<p id="turnsleft"></p>
-		<form>
-			<label for="guess" id="guesslabel">Guess:</label>
-			<input type="text" name="guess" id="guess">
-			<button type="submit">Guess Letter</button>
-		</form>
+		<div id="gamespace">
+			<p id="wordblank"></p>
+			<p id="wrongletters">Dead Letters: </p>
+			<p id="turnsleft"></p>
+			<form>
+				<label for="guess" id="guesslabel">Guess:</label>
+				<input type="text" name="guess" id="guess" maxlength="1">
+				<button type="submit">Taunt the Goatman</button>
+			</form>
+		</div>
+		<img id="goatman" src="https://vignette.wikia.nocookie.net/cryptidz/images/0/0a/Gtman.png/revision/latest?cb=20180417000301">
 	</div>
 
 	<script

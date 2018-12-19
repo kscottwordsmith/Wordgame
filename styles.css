@@ -3,6 +3,14 @@ html {box-sizing: border-box;}
 
 body {
 	font-family: monospace;
+	background: black;
+	color: rgb(107,188,144);
+}
+
+#container {
+	display: flex;
+	flex-direction: row;
+	position: relative;
 }
 
 #wordblank {
@@ -23,6 +31,33 @@ body {
 	font-family: sans-serif;
 }
 
+#guess {
+	padding: 2px;
+	width: 25px;
+	border-radius: 3px;
+}
+
+#guess:focus {
+	outline: none;
+	box-shadow: 0px 0px 8px 2px rgb(107,188,144);
+}
+
 button {
-	width: 100px;
+	width: auto;
+	padding: 4px;
+	border-radius: 3px;
+}
+
+button:hover {
+	box-shadow: 0px 0px 8px 2px rgb(107,188,144);
+}
+
+#goatman {
+	opacity: 0.1;
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	left: 600px;
+	transition: height .1s;
+	transition: width .1s;
 }
